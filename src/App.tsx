@@ -15,6 +15,8 @@ const handleChange=(event:ChangeEvent<HTMLInputElement>):void =>{
   }   
    
 }
+
+// ADD
 const addTask =():void =>{
   const newTask = {taskName:task,deadline:deadline};
   setTodoList([...todoList,newTask])
@@ -23,6 +25,7 @@ const addTask =():void =>{
    
 } 
 
+// DELETE
 const completeTask = (taskNameToDelete: string): void => {
   setTodoList(
     todoList.filter((task) => {
@@ -31,8 +34,6 @@ const completeTask = (taskNameToDelete: string): void => {
   );
 };
 
-
-  
 
 
   return(
@@ -53,7 +54,7 @@ const completeTask = (taskNameToDelete: string): void => {
           placeholder="Deadline (in days) " />
          </div> 
           
-         <button onClick={addTask}>Add</button>
+         <button className='delete' onClick={addTask}>Add</button>
          </div>
       <div className='todoList'>
       {todoList.map((task:ITask,key:number)=>{
