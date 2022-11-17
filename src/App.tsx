@@ -23,11 +23,13 @@ const addTask =():void =>{
    
 } 
 
-const completeTask = (taskNameToDelete:string):void=>{
-  setTodoList(todoList.filter((task)=>{
-    return task.taskName != taskNameToDelete
-  }))
-}
+const completeTask = (taskNameToDelete: string): void => {
+  setTodoList(
+    todoList.filter((task) => {
+      return task.taskName !== taskNameToDelete;
+    })
+  );
+};
 
 
   
