@@ -54,7 +54,7 @@ const completeTask = (taskNameToDelete: string): void => {
           placeholder="Deadline (in days) " />
          </div> 
           
-         <button className='delete' onClick={addTask}>Add</button>
+         <button className='delete' onClick={addTask}>ADD To list</button>
          </div>
       <div className='todoList'>
       {todoList.map((task:ITask,key:number)=>{
@@ -63,6 +63,6 @@ const completeTask = (taskNameToDelete: string): void => {
       </div>  
     </div>  
   )
-}
+} 
 
 export default App;
