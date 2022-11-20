@@ -32,7 +32,7 @@ const completeTask = (taskNameToDelete: string): void => {
       return task.taskName !== taskNameToDelete;
     })
   );
-};
+}
 
 
 
