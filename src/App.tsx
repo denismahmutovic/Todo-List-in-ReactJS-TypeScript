@@ -23,7 +23,7 @@ const addTask =():void =>{
   setTask("")
   setDealine(0)
    
-} 
+};
 
 // DELETE
 const completeTask = (taskNameToDelete: string): void => {
