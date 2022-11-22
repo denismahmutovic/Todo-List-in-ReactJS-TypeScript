@@ -31,7 +31,7 @@ const completeTask = (taskNameToDelete: string): void => {
     todoList.filter((task) => {
       return task.taskName !== taskNameToDelete;
     })
-  );
+  )
 }
 
 
