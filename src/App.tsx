@@ -14,7 +14,7 @@ const handleChange=(event:ChangeEvent<HTMLInputElement>):void =>{
     setDealine(Number(event.target.value))
   }   
    
-};
+}
 // ADD
 const addTask =():void =>{
   const newTask = {taskName:task,deadline:deadline};
